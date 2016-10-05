@@ -2,12 +2,25 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
     <script>tinymce.init({ selector:'textarea' });</script>
+    <script src="scripts.js"></script>
 </head>
 
 <body>
-    <textarea>Easy (and free!) You should check out our premium features.</textarea>
+    <div class="container-fluid">
+        <div id="buttonArea" class="col-xs-3">
+            <button type="button" class="btn btn-primary btn-block" onclick="buttonActions.appendTextArea();">Add editable text area</button>
+        </div>
+        <div id="resultArea" class="col-xs-9">
+
+            <textarea>
+                
+            </textarea>
+
+        </div>
+    </div>
 </body>
 
 </html>
